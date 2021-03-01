@@ -1,0 +1,31 @@
+{
+    "name": "vendor/laravel-package",
+    "description": "Laravel package boilerplate",
+    "type": "library",
+    "license": "MIT",
+
+    "require-dev": {
+        "orchestra/testbench": "^6.13",
+        "phpunit/phpunit": "^9.5"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Vendor\\LaravelPackage\\": "src"
+        }
+    },
+    
+    "autoload-dev": {
+        "psr-4": {
+            "Vendor\\LaravelPackage\\Tests\\": "tests"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\LaravelPackage\\PackageServiceProvider"
+            ]
+        }
+    }
+}
