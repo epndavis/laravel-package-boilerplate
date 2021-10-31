@@ -1,9 +1,13 @@
 <?php
-namespace Vendor\LaravelPacakage\Tests;
 
-use Vendor\LaravelPacakage\PackageServiceProvider;
+namespace Vendor\LaravelPackage\Tests;
+
+use Vendor\LaravelPackage\PackageServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
+/**
+ * @package Vendor\LaravelPackage\Tests
+ */
 abstract class TestCase extends Orchestra
 {
     public function setUp(): void
@@ -11,7 +15,12 @@ abstract class TestCase extends Orchestra
         parent::setUp();
     }
 
-    protected function getPackageProviders($app)
+    /**
+     * @param \Illuminate\Foundation\Application
+     *
+     * @return array
+     */
+    protected function getPackageProviders($app): array
     {
         return [
             PackageServiceProvider::class,
