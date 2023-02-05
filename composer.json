@@ -4,14 +4,17 @@
     "type": "library",
     "license": "MIT",
 
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+
     "require": {
-        "php": "^7.4|^8.0"
+        "php": "^8.0"
     },
 
     "require-dev": {
-        "orchestra/testbench": "^6.13",
-        "phpunit/phpunit": "^9.5",
-        "brianium/paratest": "^6.2"
+        "orchestra/testbench": "^7.21",
+        "phpunit/phpunit": "^9.5.10",
+        "brianium/paratest": "^6.0"
     },
 
     "autoload": {

@@ -2,12 +2,10 @@
 
 namespace Vendor\LaravelPackage\Tests;
 
-use Vendor\LaravelPackage\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Vendor\LaravelPackage\PackageServiceProvider;
 
-/**
- * @package Vendor\LaravelPackage\Tests
- */
 abstract class TestCase extends Orchestra
 {
     public function setUp(): void
@@ -18,7 +16,7 @@ abstract class TestCase extends Orchestra
     /**
      * @param \Illuminate\Foundation\Application
      *
-     * @return array
+     * @return array<class-string<ServiceProvider>>
      */
     protected function getPackageProviders($app): array
     {
