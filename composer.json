@@ -14,7 +14,9 @@
     "require-dev": {
         "orchestra/testbench": "^7.21",
         "phpunit/phpunit": "^9.5.10",
-        "brianium/paratest": "^6.0"
+        "brianium/paratest": "^6.0",
+        "phpstan/phpstan": "^1.9",
+        "nunomaduro/larastan": "^2.4"
     },
 
     "autoload": {

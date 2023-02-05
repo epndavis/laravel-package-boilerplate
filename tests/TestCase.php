@@ -14,7 +14,7 @@ abstract class TestCase extends Orchestra
     }
 
     /**
-     * @param \Illuminate\Foundation\Application
+     * @param \Illuminate\Foundation\Application|null $app
      *
      * @return array<class-string<ServiceProvider>>
      */
